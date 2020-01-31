@@ -1,20 +1,13 @@
 public class CurrentAccount extends Account {
-    private int overdraftLimit;
-
-    public CurrentAccount(int a, int overdraftLimit) {
+    public CurrentAccount(int a) {
         super(a);
-        this.overdraftLimit = overdraftLimit;
-    }
-
-    public int getOverDraftLimit() {
-        return this.overdraftLimit;
     }
 
     public boolean overDrafted() {
-        if (getBalance() > overdraftLimit) {
-            return overDrafted = true;
-        } else {
-            return overDrafted = false;
+        if (getBalance() <= 0) {
+            return true; }
+        else {
+            return false;
         }
     }
 }

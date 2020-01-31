@@ -7,8 +7,16 @@ public class SavingsAccount extends Account {
         this.interest = interest;
     }
 
-    public double calculateInterest() {
-        interest = a * 0.08;
+    public double getInterest() {
+        interest = getBalance() * 0.08;
         return interest;
+
+        
     }
+
+    public double addInterestToSavingsAccounts() {
+        return getBalance() + getInterest();
+    }
+
+
 }

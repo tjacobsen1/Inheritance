@@ -15,8 +15,8 @@ public class Account
     
     public Account(int a)
     {    
-	bal=0.0;
-	accnum=a;
+	this.bal=0.0;
+	this.accnum=a;
     }
     
     public void deposit(double sum)
@@ -39,12 +39,12 @@ public class Account
     
     public double getBalance()
     {
-	return bal;
+	return this.bal;
     }
     
     public double getAccountNumber()
     {
-	return accnum;
+	return this.accnum;
     }
     
     public String toString()
